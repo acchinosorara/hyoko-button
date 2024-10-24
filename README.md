@@ -2,6 +2,9 @@
 キャラクターがホバーアニメーションするボタンです。ボタンは同一ページ上に複数設置することを想定しています。  
 必要に応じて調整してみてください。
 
+### デモページ
+[https://acchinosorara.github.io/hyoko-button/](https://acchinosorara.github.io/hyoko-button/)
+
 ### 画像構成
 ![img](https://github.com/user-attachments/assets/74723039-75eb-48d8-bf1e-dd9e50e02e34)
 
