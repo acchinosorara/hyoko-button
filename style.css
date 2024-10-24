@@ -1,0 +1,92 @@
+@charset "utf-8";
+
+:root {
+    --black: #222;
+}
+
+html {
+    font-size: 16px;
+}
+
+body {
+    margin: 0;
+}
+
+*, *::before, *::after {
+    box-sizing: border-box;
+}
+
+.btn_area {
+    display: flex;
+    gap: 30px;
+    justify-content: center;
+    margin-block: 60px;
+    padding-inline: 15px;
+}
+
+.btn, .btn img {
+    display: block;
+}
+
+.btn {
+    position: relative;
+    width: min(100%, 200px);
+    cursor: pointer;
+}
+
+/* キャラクター */
+.btn img {
+    position: absolute;
+    height: auto;
+    left: 50%;
+    pointer-events: none;
+}
+
+.btn_head {
+    width: 70%;
+    top: 0;
+    translate: -50% 0;
+    z-index: 10;
+}
+
+.btn_hand {
+    width: calc(70% / 3);
+    z-index: 40;
+}
+
+.hand0 {
+    translate: -150% -50%;
+}
+
+.hand1 {
+    translate: 50% -50%;
+}
+
+/* ボタンテキスト */
+.btn_text {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: var(--headHeight);
+    margin: 0;
+    background-color: #fff;
+    border: solid 2px var(--black);
+    border-radius: 5px;
+    padding: 1em;
+    color: var(--black);
+    font-weight: bold;
+    z-index: 30;
+}
+
+@media screen and (max-width: 767px) {
+
+    .btn_area {
+        display: grid;
+        grid-template-columns: repeat(auto-fill, minmax(140px, 1fr));
+    }
+
+    .btn {
+        width: 100%;
+    }
+}
